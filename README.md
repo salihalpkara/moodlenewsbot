@@ -11,6 +11,6 @@ The bot opens a headless web browser using Selenium and webscrapes the contents 
 
 Covid salgını ve uzaktan eğitim sırasında Moodle, ödevler, duyurular ve içerik paylaşımı için vazgeçilmez bir araçtı. Öğrencilerin tüm derslerin sayfalarını takip etmesi gerekiyordu. Kontrol etmemiz gereken 10'dan fazla ders olduğu için bu zor bir görevdi. Bu nedenle, tüm derslerin sayfalarını periyodik olarak ziyaret eden ve bir değişiklik tespit edildiğinde sayfadaki değişikliği bildiren bir mesaj gönderen bir Discord botu geliştirdim. 2020'nin sonundan 2021'in başına kadar bu proje üzerinde çalıştım. Uzaktan eğitimin sona ermesiyle birlikte proje sonlandırıldı.
 
-Bot, Selenium'u kullanarak başsız bir web tarayıcısı açar ve BeautifulSoup4'ü kullanarak içeriği veri kazıma ile elde eder. Sonra herhangi bir fark olup olmadığını belirler. Varsa değiştirilen kısmı belirtilen Discord kanalına mesaj olarak gönderir ve içeriğin son versiyonunu sonraki karşılaştırmalar için kaydeder. Bu döngü periyodik olarak tekrar eder.
+Bot, Selenium'u kullanarak başsız bir web tarayıcısı açar ve BeautifulSoup4'ü kullanarak içeriği kazıyarak (webscraping) çeker. Sonra herhangi bir fark olup olmadığını belirler. Varsa değiştirilen kısmı belirtilen Discord kanalına mesaj olarak gönderir ve içeriğin son versiyonunu sonraki karşılaştırmalar için kaydeder. Bu döngü periyodik olarak tekrar eder.
 
 ![](https://user-images.githubusercontent.com/118119029/219814077-1e840b04-230b-458e-89ac-7c4ab1c6ef51.png)
