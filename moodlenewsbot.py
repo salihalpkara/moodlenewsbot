@@ -88,7 +88,7 @@ async def checklessons(ders):
         print(currenttime + " " + ders["dersadı"] + " dersinde değişiklik algılandı. Algılanan değişiklik: ")            
         for item in newcontent:
             degisiklik += item + "\n"
-        await client.get_channel(766980113794596865).send(currenttime + " saatinde" + "**" + ders["dersadı"] + "**" + " dersinde değişiklik algılandı.\n *Algılanan değişiklik:*\n\n " + degisiklik + "Ders Moodle sayfasına direkt erişim için: " + ders["moodlelink"])
+        await client.get_channel({CHANNEL_ID}).send(currenttime + " saatinde" + "**" + ders["dersadı"] + "**" + " dersinde değişiklik algılandı.\n *Algılanan değişiklik:*\n\n " + degisiklik + "Ders Moodle sayfasına direkt erişim için: " + ders["moodlelink"])
         print(degisiklik)
         with open(ders["contentfile"], "w", encoding="utf-8") as f:
             for item in temizdersicerigibolunmus:
